@@ -1,6 +1,8 @@
 package puppy
 
 import (
+	"fmt"
+
 	dog "github.com/joyadauche/test-dependency-two"
 )
 
@@ -18,4 +20,8 @@ func BigBark() string {
 
 func BigBarks() string {
 	return dog.WhenGrownUp(Barks())
+}
+
+func From11() {
+	fmt.Println("I'm from version 1.1.0")
 }
